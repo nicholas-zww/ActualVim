@@ -44,7 +44,7 @@ def plugin_loaded():
         NEOVIM_PATH = util.which('nvim')
 
     if sys.platform == 'win32':
-        if not NEOVIM_PATH:
+        if not NEOVIM_PATH and NEOVIM_PATH == "nvim" :
             candidates = [
                 r'C:\Program Files\Neovim',
                 r'C:\Program Files (x86)\Neovim',
