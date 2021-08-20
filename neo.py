@@ -49,6 +49,7 @@ def plugin_loaded():
                 r'C:\Program Files\Neovim',
                 r'C:\Program Files (x86)\Neovim',
                 r'C:\Neovim',
+                r'C:\tools\Neovim',
             ]
             chocoroot = os.getenv('ChocolateyBinRoot')
             if chocoroot: candidates.insert(0, os.path.join(chocoroot, r'\neovim\Neovim'))
